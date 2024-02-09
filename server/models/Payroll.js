@@ -19,7 +19,7 @@ const payrollSchema = new mongoose.Schema({
         required: true
     },
     amount: {
-        type: Number,
+        type: Number, 
         required: true
     },
     date: {
