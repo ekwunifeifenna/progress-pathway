@@ -1,0 +1,47 @@
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+    margin-top: 0;
+    width: 100%; /* Add this line to set the width to 100% */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add this line to add a box shadow */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right: 10px;
+    color: black;
+}
+
+.navbar img {
+    height: 200px;
+    width: 200px;
+    width: 150px;
+    
+    margin-right: 20px; /* Add this line to increase the space between the logo and other links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+
+.navbar img {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px; /* Add this line to increase the space between the logo and other links */
+}
+  
+

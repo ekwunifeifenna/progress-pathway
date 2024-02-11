@@ -9,34 +9,23 @@ const Signup = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const user = { username, email, password, role };
-    const response = await axios.post('/users', user);
-    // Handle the response (e.g., save the token and user info to state or localStorage)
+
+    try {
+      const response = await axios.post('http://localhost:3001/api/users/signup', { username, email, password, role });
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
-    <div>
-      <h1>Signup</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input type="text" value={username} onChange={e => setUsername(e.target.value)} required />
-        </label>
-        <label>
-          Email:
-          <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
-        </label>
-        <label>
-          Password:
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
-        </label>
-        <label>
-          Role:
-          <input type="text" value={role} onChange={e => setRole(e.target.value)} required />
-        </label>
-        <input type="submit" value="Signup" />
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="Username" required />
+      <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" required />
+      <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" required />
+      <input type="text" value={role} onChange={e => setRole(e.target.value)} placeholder="Role" required />
+      <button type="submit">Sign Up</button>
+    </form>
   );
 };
 

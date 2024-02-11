@@ -1,8 +1,7 @@
-const mongoose = require('mongoose'); // Import Mongoose
-const express = require('express'); // Import Express
-const cors = require('cors'); // Import Cors
+const express = require('express');
+const cors = require('cors');
+const mongoose = require('mongoose');
 
-//import routes
 const userRoutes = require('./routes/users');
 const patientRoutes = require('./routes/patients');
 const appointmentRoutes = require('./routes/appointments');
@@ -12,17 +11,11 @@ const emrsRoutes = require('./routes/emrs');
 const practiceManagementRoutes = require('./routes/practiceManagements');
 const businessInsightsRoutes = require('./routes/businessInsights');
 
-// Create an instance of Express
 const app = express();
 
-// Use middleware
-app.use(express.json()); // Parse JSON bodies
-app.use(cors()); // Enable CORS
+app.use(cors());
+app.use(express.json());
 
-
-
-
-// Connect to MongoDB
 mongoose.connect(
     'mongodb+srv://ekwunifeifenna:BxHHezqzisya8KWd@progress-pathway.lvryuy2.mongodb.net/?retryWrites=true&w=majority', 
     { useNewUrlParser: true, useUnifiedTopology: true }
@@ -34,21 +27,17 @@ mongoose.connect(
     console.error('Error connecting to MongoDB:', error);
 });
 
+app.use('/api/users', userRoutes);
+app.use('/api/patients', patientRoutes);
+app.use('/api/appointments', appointmentRoutes);
+app.use('/api/billings', billingRoutes);
+app.use('/api/payrolls', payrollRoutes);
+app.use('/api/emrs', emrsRoutes);
+app.use('/api/practiceManagements', practiceManagementRoutes);
+app.use('/api/businessInsights', businessInsightsRoutes);
 
-// Use routes
-app.use(userRoutes);
-app.use(patientRoutes);
-app.use(appointmentRoutes);
-app.use(billingRoutes); 
-app.use(payrollRoutes);
-app.use(emrsRoutes);
-app.use(practiceManagementRoutes);
-app.use(businessInsightsRoutes);
-
-// Start the server
 app.listen(3001, () => {
     console.log('Server is running on port 3001');
-}); // Start the server on port 3001
+});
 
-module.exports = app; // Export the app
-
+module.exports = app;
