@@ -1,0 +1,42 @@
+footer {
+    position: absolute;  /*this makes it so that it always appears at the bottom of the page */
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c3bf1;
+    height: 100px;
+    gap: 20px;
+  }
+
+    footer h2 {
+        margin: 0;
+        color: white;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    footer ul li {
+        margin: 0 10px;
+        color: white;
+    }
+
+    footer ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer ul li a:hover {
+        color: #29e639;
+    }
+
+

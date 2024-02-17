@@ -9,7 +9,7 @@ const Navbar = () => {
       
       <ul>
         <li>
-          <img src={logo} alt="logo" />
+          <Link to="/"><img src={logo} alt="logo" /></Link>
         </li>
         
         <li>
@@ -31,10 +31,11 @@ const Navbar = () => {
           <Link to="/scheduling">Scheduling</Link>
         </li>
         <li>
-          <Link to="/signup">Signup</Link>
-        </li>
-        <li>
           <Link to="/login">Login</Link>
+          
+        </li>
+        <li className='signup' id='signup'>
+          <Link to="/signup">Signup</Link>
         </li>
       </ul>
     </nav>

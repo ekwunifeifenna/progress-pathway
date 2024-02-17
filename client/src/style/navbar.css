@@ -1,5 +1,6 @@
 
 .navbar {
+    position: relative; /* Add this line to make the navbar fixed */
     background-color: white;
     padding: 10px;
     margin-top: 0;
@@ -44,4 +45,14 @@
     margin-right: 20px; /* Add this line to increase the space between the logo and other links */
 }
   
+.signup{
+    background-color: #5c3bf1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
 
+.signup:hover{
+    background-color: #29e639;
+    color: white;
+}

@@ -1,28 +1,28 @@
-.landing-page{
+.landing-page {
     display: flex;
     margin-top: 20px;
     justify-content: space-around;
 
 }
 
-.landing-page img{
+.landing-page img {
     width: 500px;
     height: 300px;
     border-radius: 50%;
     margin: 20px;
 }
 
-.landing-page h1{
+.landing-page h1 {
     font-size: 2.5rem;
     margin: 20px;
 }
 
-.landing-page p{
+.landing-page p {
     font-size: 1.5rem;
     margin: 20px;
 }
 
-.landing-page-text{
+.landing-page-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@
     max-width: 900px;
 }
 
-.landing-page button{
+.landing-page button {
     padding: 10px 20px;
     font-size: 1.5rem;
     margin: 20px;
@@ -41,7 +41,7 @@
     color: white;
 }
 
-.landing-page button:hover{
+.landing-page button:hover {
     background-color: white;
     border: 1px solid #2c29e6;
     color: #2c29e6;
