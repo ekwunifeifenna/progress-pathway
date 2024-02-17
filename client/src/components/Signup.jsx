@@ -12,7 +12,7 @@ const Signup = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3001/signup', { username, email, password, role });
+      const response = await axios.post('http://localhost:3001/api/signup', { username, email, password, role });
       console.log(response.data);
     } catch (error) {
       console.error(error);

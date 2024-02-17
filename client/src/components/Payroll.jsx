@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../style/payroll.css';
 
 const Payroll = () => {
   const [employeeId, setEmployeeId] = useState('');
@@ -31,9 +32,9 @@ const Payroll = () => {
   };
 
   return (
-    <div>
+    <div className='payroll-page'>
       <h1>Payroll Form</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="payroll-form">
         <label>
           Employee ID:
           <input

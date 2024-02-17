@@ -12,7 +12,7 @@ const Navbar = () => {
           <Link to="/"><img src={logo} alt="logo" /></Link>
         </li>
         
-        <li>
+        {/* <li>
           <Link to="/billing">Billing</Link>
         </li>
         <li>
@@ -29,7 +29,23 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/scheduling">Scheduling</Link>
-        </li>
+        </li> */}
+
+        <li>
+          <div className="dropdown">
+            <button className="dropbtn">Features</button>
+            <div className="dropdown-content">
+              <Link to="/billing">Billing</Link>
+              <Link to="/business-insights">Business Insights</Link>
+              <Link to="/emr">EMR</Link>
+              <Link to="/payroll">Payroll</Link>
+              <Link to="/practice-management">Practice Management</Link>
+              <Link to="/scheduling">Scheduling</Link>
+            </div>
+          </div>
+        </li>        
+
+
         <li>
           <Link to="/login">Login</Link>
           

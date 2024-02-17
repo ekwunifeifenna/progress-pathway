@@ -30,7 +30,7 @@
     max-width: 900px;
 }
 
-.landing-page button {
+.btn {
     padding: 10px 20px;
     font-size: 1.5rem;
     margin: 20px;
@@ -39,9 +39,10 @@
     border: 1px solid;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
-.landing-page button:hover {
+.btn:hover {
     background-color: white;
     border: 1px solid #2c29e6;
     color: #2c29e6;

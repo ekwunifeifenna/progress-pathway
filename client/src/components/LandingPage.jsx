@@ -1,6 +1,7 @@
 // import React from 'react';
 import logo from '../assets/logo.png';
 import '../style/landing-page.css';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -13,7 +14,7 @@ const LandingPage = () => {
         impedit distinctio voluptas aliquam facere magni at repellendus, quam aspernatur placeat suscipit illo.
          Sunt, deleniti. Ratione sit in esse facere maiores iure quidem est totam dicta dolore.</p>
 
-         <button>Get Started</button>
+         <Link to="/signup" className="btn">Get Started</Link>
 
       </div>
       
