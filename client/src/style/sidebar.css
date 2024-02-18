@@ -1,0 +1,36 @@
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  .sidebar-menu li a:hover {
+    color: #007BFF;
+  }

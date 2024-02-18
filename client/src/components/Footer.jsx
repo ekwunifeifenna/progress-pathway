@@ -8,7 +8,7 @@ import '../style/footer.css';
 const Footer = () => {
   return (
     <footer>
-      <h2>Progress Pathway</h2>
+      <h2>Harmony Care</h2>
       <ul className='footer-list'>
         <li >
           <a href="https://www.facebook.com">

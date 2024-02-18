@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div className='landing-page'>
 
       <div className='landing-page-text'>
-      <h1>Progress Pathway</h1>
+      <h1>Harmony</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore similique voluptatem, 
         vitae alias culpa consequatur quisquam, aut molestiae est quod non reiciendis accusantium 
         impedit distinctio voluptas aliquam facere magni at repellendus, quam aspernatur placeat suscipit illo.
