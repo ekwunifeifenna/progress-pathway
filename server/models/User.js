@@ -47,8 +47,11 @@ userSchema.pre('save', async function(next) {
 
 userSchema.methods.generateAuthToken = async function() {    
     const user = this; // Get the user
-    const token = jwt.sign({_id: user._id}, 'secretkey');    // Generate a token for the user
-    return token; // Return the token
+    const token = jwt.sign({_id: user._id.toString()}, 'secretkey');    // Generate a token for the user
+    user.tokens = user.tokens.concat({ token });
+    await user.save();
+
+    return token;
 }
 
 // Create a method to find a user by their email and password

@@ -27,9 +27,17 @@ const Signup = () => {
     <h1>Sign Up</h1>
     <form onSubmit={handleSubmit} className="signup-form">
       <input type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="Username" required />
+
+
       <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" required />
+
+
       <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" required />
+
+
       <input type="text" value={role} onChange={e => setRole(e.target.value)} placeholder="Role" required />
+
+      
       <button type="submit">Sign Up</button>
     </form>
     <Link to="/login" className="btn">Already have an account? Log in</Link>

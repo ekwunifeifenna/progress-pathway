@@ -9,6 +9,17 @@
     height: 50px;
     margin-right: 10px;
   }
+
+  .sidebar-header h1 a {
+    text-decoration: none;
+    color: black;
+
+  
+  }
+
+  .sidebar-header h1 a:hover {
+    text-decoration: none;
+  }
   
   .sidebar-menu {
     list-style: none;

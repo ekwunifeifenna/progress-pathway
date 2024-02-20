@@ -7,8 +7,9 @@ const Sidebar = () => {
   return (
     <aside>
       <div className="sidebar-header">
-        <img src={logo} alt="Logo" />
-        <h1>Harmony Care</h1>
+        {/**Make the image and the title in the sidebar link to the dashboard page */}
+        <Link to ='/dashboard'><img src={logo} alt="Logo" /></Link>
+        <Link to='/dashboard'><h1>Harmony Care</h1></Link>
       </div>
       <ul className="sidebar-menu">
         <li><Link to="/billing">Billing</Link></li>
@@ -17,8 +18,8 @@ const Sidebar = () => {
         <li><Link to="/payroll">Payroll</Link></li>
         <li><Link to="/practice-management">Practice Management</Link></li>
         <li><Link to="/scheduling">Scheduling</Link></li>
-        <li><Link to="/clients">Clients</Link></li>
-        <li><Link to="/therapist">Therapists</Link></li>
+        <li><Link to="/patients">Patients</Link></li>
+        <li><Link to="/therapists">Therapists</Link></li>
       </ul>
     </aside>
   );

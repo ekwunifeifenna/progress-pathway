@@ -16,24 +16,36 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        try {
-            const response = await axios.post('http://localhost:3001/api/users/login', {
-                email,
-                password,
-            });
+        // try {
+        //     const response = await axios.post('http://localhost:3001/api/users/login', {
+        //         email,
+        //         password,
+        //     });
 
-            console.log(response.data); // Handle the response as needed
+        //     console.log(response.data); // Handle the response as needed
 
-            if (response.data.success) {
-                navigate('/Dashboard'); // Navigate to the Dashboard page if login is successful
-            } else {
-                // Handle unsuccessful login
-                setError('Invalid email or password. Please create an account.');
+        //     if (response.data.success) {
+        //         navigate('/Dashboard'); // Navigate to the Dashboard page if login is successful
+        //     } else {
+        //         // Handle unsuccessful login
+        //         setError('Invalid email or password. Please create an account.');
+        //     }
+        // } catch (error) {
+        //     console.error(error); // Handle the error as needed
+        //     setError('An error occurred. Please try again.');
+        // }
+
+         axios.post('http://localhost:3001/api/users/login', { email, password })
+         .then(response => {
+            console.log(response);
+            if(response.data === 'success'){
+                navigate('/dashboard');
+
             }
-        } catch (error) {
-            console.error(error); // Handle the error as needed
-            setError('An error occurred. Please try again.');
-        }
+                
+            })
+        .catch(error => console.log(error));
+
     };
 
     return (
@@ -44,7 +56,7 @@ const Login = () => {
 
 
                 <label>
-                    Email: {/* Add this block */}
+                    Email: 
                     <input
                         type="email"
                         value={email}
@@ -53,10 +65,6 @@ const Login = () => {
                     />
                 </label>
                 <br />
-
-
-      
-
 
                 <label>
                     Password:

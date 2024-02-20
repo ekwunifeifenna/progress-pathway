@@ -1,0 +1,43 @@
+.patient {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.new-patient {
+  margin-top: 20px;
+}
+
+.new-patient form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-patient form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-patient button,
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.new-patient button:hover,
+button:hover {
+  background-color: white;
+  color: #007BFF;
+  border: 2px solid #007BFF;
+}

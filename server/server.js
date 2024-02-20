@@ -10,6 +10,7 @@ const payrollRoutes = require('./routes/payrolls');
 const emrsRoutes = require('./routes/emrs');
 const practiceManagementRoutes = require('./routes/practiceManagements');
 const businessInsightsRoutes = require('./routes/businessInsights');
+const therapistRoutes = require('./routes/therapists');
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use('/api/payrolls', payrollRoutes);
 app.use('/api/emrs', emrsRoutes);
 app.use('/api/practiceManagements', practiceManagementRoutes);
 app.use('/api/businessInsights', businessInsightsRoutes);
+app.use('/api/therapists', therapistRoutes);
 
 app.listen(3001, () => {
     console.log('Server is running on port 3001');

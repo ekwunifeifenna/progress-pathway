@@ -1,5 +1,5 @@
 // import React from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/Harmonylogo.png';
 import '../style/landing-page.css';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div className='landing-page'>
 
       <div className='landing-page-text'>
-      <h1>Harmony</h1>
+      <h1>Harmony Care</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore similique voluptatem, 
         vitae alias culpa consequatur quisquam, aut molestiae est quod non reiciendis accusantium 
         impedit distinctio voluptas aliquam facere magni at repellendus, quam aspernatur placeat suscipit illo.

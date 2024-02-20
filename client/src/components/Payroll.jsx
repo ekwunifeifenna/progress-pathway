@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Sidebar from './Sidebar';
 import '../style/payroll.css';
 
 const Payroll = () => {
@@ -32,7 +33,10 @@ const Payroll = () => {
   };
 
   return (
+    <div className='payroll-container'>
+    <Sidebar />
     <div className='payroll-page'>
+      
       <h1>Payroll Form</h1>
       <form onSubmit={handleSubmit} className="payroll-form">
         <label>
@@ -107,6 +111,7 @@ const Payroll = () => {
         <br />
         <button type="submit">Submit</button>
       </form>
+    </div>
     </div>
   );
 };

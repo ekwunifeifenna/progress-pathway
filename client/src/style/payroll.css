@@ -1,9 +1,17 @@
+.payroll-container {
+  display: flex;
+}
+
 .payroll-page{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    flex: 3;
+    padding: 20px;
 }
+
+
 
 .payroll-form {
     display: flex;
